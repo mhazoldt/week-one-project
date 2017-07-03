@@ -64,7 +64,6 @@ html, body {
 body {
   margin: 0px;
   background-color: #F2F1E8;
-  padding-top: 50px;
 }
 
 a {
@@ -128,6 +127,10 @@ a:hover {
 
 #nav_right {
   display: flex;
+}
+
+#nav_offset {
+  height: 50px;
 }
 
 .active_link {
