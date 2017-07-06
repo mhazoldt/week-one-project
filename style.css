@@ -158,42 +158,181 @@ header > h3 {
   font-weight: 200;
 }
 
-.content_row {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  max-width: 800px;
-  padding: 0px 5px;
+
+
+
+
+/*images in flexbox*/
+
+ul {
+  width: 1000px;
   margin: 0 auto;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-#row1 img {
-  height: auto;
-  width: auto;
-  max-height: 290px;
+li {
+  box-sizing: border-box;
 }
 
-#row2 img {
-  height: auto;
-  width: auto;
-  max-height: 143px;
+.row1 {
+  height: 300px;
+  padding: 5px;
 }
 
-.content_div {
+.row2 {
+  height: 205px;
+  padding: 5px;
+}
+
+/*row1*/
+#container1 {
+  width: 60%;
+}
+
+#container1 > div {
   position: relative;
-  margin: 5px;
+  height: 100%;
+  overflow: hidden;
 }
+
+#container1 img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+#container2 {
+  width: 20%;
+
+}
+#container2 > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container2 img {
+  position: absolute;
+  width: 100%;
+  top: -30px;
+  left: 0px;
+}
+
+
+
+#container3 {
+  width: 20%;
+}
+#container3 > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container3 img {
+  position: absolute;
+  width: 115%;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+/*row2*/
+#container4 {
+  width: 20%;
+
+}
+#container4 > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container4 img {
+  position: absolute;
+  width: 140%;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+
+#container5 {
+  width: 20%;
+}
+#container5 > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container5 img {
+  position: absolute;
+  width: 140%;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+
+
+#container6 {
+  width: 40%;
+}
+#container6 > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container6 img {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+
+
+#container7 {
+  width: 20%;
+}
+#container7 > div {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#container7 img {
+  position: absolute;
+  width: 140%;
+  top: 0px;
+  left: 0px;
+}
+
 
 .content_text_overlay {
   position: absolute;
-  bottom: 15px;
-  left: 0px;
-  background-color: black;
+  background-color: #2b2f26;
   color: #F2F1E8;
+  bottom: 10px;
+  left: 0px;
   line-height: 30px;
-  padding: 0px 15px;
-}
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 10px;
 
+}
 
 
 /*about page*/
@@ -304,7 +443,7 @@ aside > img {
 }
 
 footer {
-  background-color: black;
+  background-color: #2b2f26;
   color: #F2F1E8;
   margin-top: 50px;
   position: absolute;
@@ -319,7 +458,7 @@ footer > p {
 }
 
 #div_footer {
-  background-color: black;
+  background-color: #2b2f26;
   color: #F2F1E8;
   margin-top: 50px;
   width: 100%;
